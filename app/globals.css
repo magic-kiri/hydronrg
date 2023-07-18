@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  * {
+    box-sizing: border-box
+  }
+
+  body, html {
+    @apply scroll-smooth min-h-screen lg:h-screen bg-white;
+    @apply flex flex-col;
+    font-family: var(--font-inter) !important;
+  }
+
+  main {
+    @apply lg:h-full
+  }
+
+  ol {
+    @apply !list-decimal
+  }
+}

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .language__link {
+    @apply block w-10 h-7;
+    @apply text-gray hover:text-primary text-sm leading-7;
+    @apply text-center font-semibold capitalize
+  }
+
+  .language__link.current {
+    @apply text-primary
+  }
+}

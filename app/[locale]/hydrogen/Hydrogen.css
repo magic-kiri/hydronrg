@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hydrogen {
+    @apply lg:flex gap-0 p-0 items-stretch overflow-hidden;
+    @apply bg-gradient-radial from-gr-start to-gr-end
+  }
+
+  .hydrogen .column {
+    @apply relative flex-1 first:flex-[1.15] pt-12 first:pt-28 lg:pt-28 lg:h-full;
+    @apply before:content-[''] before:h-12 before:w-[calc(100%-38px)] before:absolute before:bottom-[calc(100%-48px)] lg:before:bottom-[calc(100%-112px)] before:right-0;
+    @apply after:content-[''] after:h-12 after:w-[38px] after:absolute after:bottom-[calc(100%-48px)] lg:after:bottom-[calc(100%-112px)] after:left-0;
+  }
+
+  .column.edged {
+    @apply after:h-0 after:w-0 after:bg-transparent after:border-[0] after:border-transparent after:border-solid after:border-b-[48px] after:border-l-[38px] after:border-r-0
+  }
+
+  .column.light {
+    @apply after:bg-extralight-gray before:bg-extralight-gray
+  }
+
+  .column.light.edged {
+    @apply after:border-b-extralight-gray after:bg-transparent
+  }
+  
+  .column.gray {
+    @apply after:bg-light-gray before:bg-light-gray
+  }
+  
+  .column.gray.edged {
+    @apply after:border-b-light-gray after:bg-transparent
+  }
+
+  .column .banner {
+    @apply absolute top-0 px-8 py-7 w-full md:w-[466px] lg:w-[calc(100%-54px)] bg-white;
+    @apply text-lg leading-6 text-center font-semibold text-dark-gray;
+    @apply after:absolute after:top-0 after:left-full after:h-0 after:w-0 after:bg-transparent after:border-[0] after:border-transparent after:border-solid after:border-t-[80px] after:border-r-[64px] after:border-l-0 after:border-t-white
+  }
+
+  .column .banner span {
+    @apply first:text-primary last:text-accent
+  }
+
+  .hydrogen .column .content {
+    @apply h-full p-4 md:p-14 pt-0 overflow-auto;
+    @apply text-medium-gray text-sm leading-5 font-medium
+  }
+
+  .column.light .content {
+    @apply bg-extralight-gray
+  }
+
+  .column.gray .content {
+    @apply bg-light-gray;
+  }
+
+  .hydrogen .column .content h3 {
+    @apply text-primary text-lg leading-5 font-bold;
+  }
+
+  .hydrogen .column .content h3.space {
+    @apply !ml-6;
+  }
+
+  .hydrogen .column .content p.space {
+    @apply !indent-6
+  }
+
+  .hydrogen .column .content ol {
+    @apply !pl-6 !ml-3
+  }
+
+  .hydrogen .column .content ol.space {
+    @apply !ml-6
+  }
+
+  .hydrogen .column .content .table {
+    @apply w-full h-32 lg:h-auto aspect-w-[41] lg:aspect-h-[13] relative mt-6
+  }
+
+  .hydrogen .column .content .table img {
+    @apply !object-contain
+  }
+}

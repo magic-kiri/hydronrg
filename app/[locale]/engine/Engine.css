@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .engine {
+    @apply min-h-screen lg:min-h-0 flex flex-col md:flex-row gap-0 p-0 items-stretch overflow-hidden;
+  }
+
+  .engine .information {
+    @apply w-full md:w-[400px] lg:w-[500px] px-6 lg:px-12 py-4 lg:py-5 flex flex-col gap-4;
+    @apply bg-gradient-radial from-gr-start to-gr-end
+  }
+
+  .engine .information .advantages {
+    @apply flex-1 flex flex-col justify-center gap-8
+  }
+
+  .engine .information .advantages .advantage {
+    @apply flex flex-col gap-4
+  }
+
+  .engine .information .advantages .advantage h3 {
+    @apply text-lg text-primary leading-5 font-semibold
+  }
+
+  .engine .information .advantages .advantage ul {
+    @apply !list-disc ml-6;
+    @apply text-base leading-5 text-dark-gray
+  }
+
+  .engine .information .support {
+    @apply flex flex-col md:flex-row gap-3
+  }
+
+  .engine .information .support > *{
+    @apply flex-1
+  }
+
+  .engine .content {
+    @apply flex-1 flex flex-col lg:flex-row gap-4 lg:gap-7 p-4 lg:px-7 lg:py-5
+  }
+
+  .engine .content .tagline {
+    @apply flex-1 flex flex-col items-center justify-between gap-8 md:gap-10 lg:gap-20 px-0 py-4 md:px-16 lg:px-24 lg:py-12 lg:pb-24
+  }
+
+  .engine .content .tagline h1 {
+    @apply text-primary text-lg md:text-2xl leading-5 md:leading-7 font-bold text-center
+  }
+
+  .engine .content .tagline p {
+    @apply text-dark-gray text-sm md:text-lg leading-4 md:leading-6 font-semibold text-center;
+    @apply block max-w-[480px]
+  }
+
+  .engine .content .tagline p span {
+    @apply text-primary 
+  }
+
+  .engine .content .tagline .image {
+    @apply relative w-full h-72 lg:h-full
+  }
+
+  .engine .content .tagline .image img {
+    @apply object-contain
+  }
+
+  .engine .content .testing {
+    @apply w-full md:h-48 lg:h-full lg:w-56 flex flex-col md:flex-row lg:flex-col gap-2 md:gap-4 justify-between
+  }
+
+  .engine .content .testing .test {
+    @apply relative w-full h-72 md:h-auto md:flex-1
+  }
+
+  .engine .content .testing .test img {
+    @apply !object-contain
+  }
+}

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .phone__link {
+    @apply block w-9 h-9 p-1 cursor-pointer relative;
+    @apply bg-light-gray hover:bg-primary transition-colors ease-in-out;
+  }
+
+  .phone__link .wrapper {
+    @apply w-full h-full relative
+  }
+
+  .phones__list {
+    @apply absolute top-[calc(100%+12px)] bg-white z-10 hidden shadow-md w-max
+  }
+
+  .phones__list.opend {
+    @apply block
+  }
+
+  .phones__list .phone {
+    @apply block w-full px-3 py-2 text-sm hover:bg-primary hover:text-white transition-colors ease-in-out
+  }
+}

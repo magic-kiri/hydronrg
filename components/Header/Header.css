@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  header {
+    @apply bg-white flex justify-between;
+    @apply px-4 md:px-7 md:pl-16 py-5 grow-0;
+  }
+
+  header .home__link {
+    @apply text-base leading-5 text-primary font-semibold;
+    @apply flex items-center gap-6;
+    @apply divide-x-reverse divide-gray
+  }
+
+  header .home__link .logo {
+    @apply hidden md:block w-24 h-24 relative
+  }
+
+  header .home__link .mobile_logo {
+    @apply block md:hidden w-12 h-12 relative
+  }
+
+  header .home__link .divider {
+    @apply hidden md:block w-px h-24 bg-gray
+  }
+
+  header .home__link h1 {
+    @apply hidden md:block
+  }
+
+  header .information {
+    @apply flex flex-col items-end gap-3 justify-between;
+    @apply md:h-24
+  }
+
+  header .information .made_in {
+    @apply text-[10px] md:text-xs leading-4 text-primary font-semibold;
+    @apply flex items-center gap-2 md:gap-4;
+  }
+
+  header .information .made_in .flag {
+    @apply w-[30px] h-5 md:w-10 md:h-7 relative
+  }
+
+  header .information .made_in .flag img {
+    @apply object-contain
+  }
+
+  header .information .navigation {
+    @apply hidden md:!w-auto md:!h-auto md:!static md:flex md:!flex-row items-center gap-6
+  }
+
+  header .information .navigation nav {
+    @apply flex gap-1 last:gap-0 last:divide-x divide-gray
+  }
+
+  header .information .navigation.opend {
+    @apply flex flex-col justify-center fixed w-full h-screen left-0 top-0 z-50 bg-white
+  }
+
+  header .information .navigation .close {
+    @apply absolute top-4 right-4 w-7 h-7 cursor-pointer md:hidden
+  }
+
+  header .information .burger {
+    @apply w-7 h-7 relative md:hidden cursor-pointer
+  }
+}

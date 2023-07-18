@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .product__link {
+    @apply flex-1 lg:flex-none lg:w-60 px-6 py-4 flex flex-col items-center gap-3 relative;
+    @apply border border-light-gray;
+    @apply before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[45%] before:bg-light-gray before:z-0;
+    @apply hover:border-primary hover:before:bg-primary transition-colors before:transition-colors ease-in-out
+  }
+
+  .product__link.full {
+    @apply h-full before:hidden flex-1 lg:w-[290px]
+  }
+
+  .product__link .child_wrapper {
+    @apply lg:h-full mb-4
+  }
+
+  .product__link > * {
+    @apply relative z-10
+  }
+
+  .product__link .icon {
+    @apply w-[120px] h-20 
+  }
+
+  .product__link .icon img {
+    @apply !object-contain !object-bottom
+  }
+
+  .product__link h3 {
+    @apply text-sm leading-4 font-bold text-center text-dark-gray;
+    @apply h-8
+  }
+}

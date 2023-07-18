@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .support__card {
+    @apply bg-white rounded-xl overflow-hidden
+  }
+
+  .support__card .divider {
+    @apply block w-full h-[3px] bg-light-gray
+  }
+
+  .support__card .image {
+    @apply relative w-full h-28
+  }
+
+  .support__card .image img {
+    @apply !object-contain
+  }
+
+  .support__card p {
+    @apply px-4 py-1.5;
+    @apply text-[10px] leading-3 text-dark-gray text-center font-semibold
+  }
+}

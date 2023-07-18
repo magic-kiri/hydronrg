@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .home {
+    @apply flex flex-col gap-7 p-7 px-4 md:p-7;
+    @apply bg-gradient-radial from-gr-start to-gr-end
+  }
+
+  .home .links {
+    @apply flex flex-col md:flex-row justify-end items-center gap-1
+  }
+
+  .home .wrapper {
+    @apply flex flex-col-reverse lg:flex-row gap-7 h-full
+  }
+
+  .home .wrapper .content {
+    @apply flex-1 flex flex-col gap-7
+  }
+
+  .home .wrapper .content .tagline {
+    @apply flex-none h-[280px] lg:flex-1 flex flex-col items-end justify-center md:px-24;
+    @apply text-xl md:text-3xl leading-4 md:leading-6 text-dark-gray font-semibold
+  }
+
+  .home .wrapper .content .tagline span {
+    @apply text-accent;
+  }
+
+  .home .products {
+    @apply flex flex-col md:flex-row items-stretch justify-between lg:justify-end gap-2
+  }
+}

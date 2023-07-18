@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .button__link {
+    @apply block min-w-[160px] w-full md:w-min;
+    @apply px-4 py-1.5 border border-gray;
+    @apply text-gray text-sm leading-4 font-semibold text-center;
+    @apply hover:border-primary hover:text-primary transition-colors ease-in-out
+  }
+}
