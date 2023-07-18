@@ -21,4 +21,7 @@
     .icon {
       @apply px-10
     }    
+    .description {
+      @apply !indent-6
+    }
 }

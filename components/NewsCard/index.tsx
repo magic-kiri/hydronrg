@@ -12,7 +12,7 @@ const NewsCard = () => {
   return (
     <div className="news__card">
       <h3 className="title">{title}</h3>
-      <p>{description}</p>
+      <p className="description">{description}</p>
       <div className="media">
         <div className="icon">
           <Image className="image" src={image} alt={''} width={250} height={250} />
