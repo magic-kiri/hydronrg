@@ -5,8 +5,8 @@
 @layer utilities {
   .product__link {
     @apply flex-1 lg:flex-none lg:w-60 px-6 py-4 flex flex-col items-center gap-3 relative;
-    @apply border border-light-gray;
-    @apply before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[45%] before:bg-light-gray before:z-0;
+    @apply border border-light-gray border-2 shadow-lg shadow-cyan-500/20;
+    @apply before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[40%] before:bg-light-gray before:z-0;
     @apply hover:border-primary hover:before:bg-primary transition-colors before:transition-colors ease-in-out
   }
 
