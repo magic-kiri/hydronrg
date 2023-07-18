@@ -30,6 +30,6 @@
   }
 
   .home .products {
-    @apply flex flex-col md:flex-row items-stretch justify-between lg:justify-end gap-2
+    @apply flex flex-col md:flex-row items-stretch justify-between lg:justify-evenly gap-2
   }
 }

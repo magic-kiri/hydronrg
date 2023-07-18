@@ -33,7 +33,9 @@ export default function PassPage() {
 
             <nav className="products">
               <ProductLink href="/hydrogen" image="/products/hydrogen.png" label="О водороде" showShadow={false} />
-              <ProductLink href="/products" image="/products/products.png" label="Продукты" showShadow={false} />
+              <ProductLink href="/engine" image="/products/engine.svg" label="Водородные системы для ДВС" />
+              <ProductLink href="/heating" image="/products/heating.png" label="Водородные отопительные системы" disabled />
+              <ProductLink href="/factory" image="/products/factory.png" label="Промышленные водородные системы" />
             </nav>
           </div>
         </div>

@@ -11,7 +11,7 @@
   }
 
   .product__link.full {
-    @apply h-full before:hidden flex-1 lg:w-[290px]
+    @apply h-full before:hidden lg:w-[240px] 
   }
 
   .product__link .child_wrapper {

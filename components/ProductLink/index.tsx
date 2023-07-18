@@ -10,9 +10,10 @@ interface Props {
   label: string;
   children?: React.ReactNode;
   disabled?: boolean;
+  showShadow?: boolean;
 }
 
-export default function ProductLink({ href, image, label, children, disabled = false }: Props) {
+export default function ProductLink({ href, image, label, children, disabled = false, showShadow = true }: Props) {
   const body = (
     <>
       {children && <div className="child_wrapper">{children}</div>}
@@ -26,9 +27,9 @@ export default function ProductLink({ href, image, label, children, disabled = f
   return (
     <>
       {disabled ? (
-        <div className={`product__link ${children != null ? 'full' : ''}`}>{body}</div>
+        <div className={`product__link ${showShadow ? '' : 'full'}`}>{body}</div>
       ) : (
-        <Link className={`product__link ${children != null ? 'full' : ''}`} href={href}>
+        <Link className={`product__link ${showShadow ? '' : 'full'}`} href={href}>
           {body}
         </Link>
       )}
