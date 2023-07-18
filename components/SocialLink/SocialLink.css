@@ -4,7 +4,7 @@
 
 @layer utilities {
   .social__link {
-    @apply block w-9 h-9 p-1;
+    @apply block w-14 h-14 p-1;
     @apply bg-light-gray hover:bg-primary transition-colors ease-in-out;
   }
 
