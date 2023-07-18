@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .news__card {
+      @apply border border-light-gray border-2 shadow-lg shadow-cyan-300/20;
+      @apply relative;
+      @apply flex-col w-full;
+      @apply p-6 rounded-lg;
+    }
+    .title {
+      @apply font-semibold text-xl;
+      @apply my-4;
+    }
+    .news__card .media {
+      @apply flex flex-col md:flex-row justify-center lg:justify-center gap-2 items-center;
+      @apply my-8 px-10;
+    }
+    .icon {
+      @apply px-10
+    }    
+}

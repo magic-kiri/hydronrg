@@ -4,7 +4,7 @@
 
 @layer utilities {
   .home {
-    @apply flex flex-col gap-7 p-7 px-4 md:p-7;
+    @apply overflow-y-scroll flex flex-col gap-7 p-7 px-4 md:p-7;
     @apply bg-gradient-radial from-gr-start to-gr-end
   }
 
@@ -31,5 +31,9 @@
 
   .home .products {
     @apply flex flex-col md:flex-row items-stretch justify-between lg:justify-evenly gap-2
+  }
+  
+  .home .newsContainer {
+    @apply grid gap-y-2;
   }
 }
