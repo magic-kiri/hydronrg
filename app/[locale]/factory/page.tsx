@@ -12,7 +12,7 @@ import Header from '@/components/Header';
 import SupportCard from '@/components/SupportCard';
 
 export default function Factory() {
-  const translate = useTranslations('Home');
+  // const translate = useTranslations('Home');
 
   return (
     <>

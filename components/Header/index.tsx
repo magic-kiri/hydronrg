@@ -22,10 +22,6 @@ export default function Header() {
           <Image src={"/hydro logo title.svg"} alt={""} fill />
         </div>
 
-        <div className="mobile_logo">
-          <Image src={"/hydro logo.svg"} alt={""} fill />
-        </div>
-
         <span className="divider"></span>
 
         <h1>

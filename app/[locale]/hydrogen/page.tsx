@@ -8,7 +8,7 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 
 export default function PassPage() {
-  const translate = useTranslations('Home');
+  // const translate = useTranslations('Home');
 
   return (
     <>

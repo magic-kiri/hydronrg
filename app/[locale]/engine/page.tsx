@@ -3,7 +3,7 @@
 import './Engine.css'
 
 import { useRouter } from 'next-intl/client'
-import { useTranslations } from 'next-intl'
+// import { useTranslations } from 'next-intl'
 import Link from 'next-intl/link'
 import Image from 'next/image'
 
@@ -12,7 +12,7 @@ import Header from '@/components/Header'
 import SupportCard from '@/components/SupportCard'
 
 export default function PassPage() {
-  const translate = useTranslations('Home')
+  // const translate = useTranslations('Home')
 
   return (
     <>

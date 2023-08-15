@@ -8,7 +8,7 @@ import ButtonLink from '@/components/ButtonLink';
 import ProductLink from '@/components/ProductLink';
 
 export default function PassPage() {
-  const translate = useTranslations('Home');
+  // const translate = useTranslations('Home');
 
   return (
     <>

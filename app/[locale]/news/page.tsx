@@ -15,7 +15,7 @@ interface NewsItem {
 }
 
 export default function PassPage() {
-  const translate = useTranslations('Home');
+  // const translate = useTranslations('Home');
   const [newsData, setNewsData] = useState<NewsItem[]>([]);
 
   useEffect(() => {
