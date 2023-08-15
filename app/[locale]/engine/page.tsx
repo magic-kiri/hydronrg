@@ -13,7 +13,6 @@ import SupportCard from '@/components/SupportCard'
 
 export default function PassPage() {
   // const translate = useTranslations('Home')
-
   return (
     <>
       <Header />
