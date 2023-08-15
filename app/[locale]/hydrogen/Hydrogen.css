@@ -58,15 +58,15 @@
   }
 
   .hydrogen .column .content h3 {
-    @apply text-primary text-lg leading-5 font-bold;
+    @apply text-primary text-lg leading-5 font-bold my-1;
   }
 
   .hydrogen .column .content h3.space {
-    @apply !ml-6;
+    @apply ml-6 my-1 text-justify;
   }
 
   .hydrogen .column .content p.space {
-    @apply !indent-6
+    @apply !indent-6 text-justify;
   }
 
   .hydrogen .column .content ol {
@@ -83,5 +83,11 @@
 
   .hydrogen .column .content .table img {
     @apply !object-contain
+  }
+  .content ol li {
+    @apply text-justify;
+  }
+  .column p {
+    @apply text-justify;
   }
 }

@@ -24,3 +24,23 @@
     @apply block w-full px-3 py-2 text-sm hover:bg-primary hover:text-white transition-colors ease-in-out
   }
 }
+
+@media (max-width: 640px) {
+  .phone-content {
+    @apply block;
+  }
+  .phone-name,
+  .phone-number {
+    @apply mr-0; 
+  }
+}
+
+@media (min-width: 641px) {
+  .phone-content {
+    @apply flex flex-row items-center;
+  }
+  .phone-name,
+  .phone-number {
+    @apply mr-2.5;
+  }
+}
