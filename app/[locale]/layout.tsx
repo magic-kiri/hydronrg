@@ -41,7 +41,7 @@ export default async function Layout({ children, params }: LayoutProps) {
 
   return (
     <html lang={params.locale} className={inter.variable}>
-      <body>
+      <body className="h-screen">
         <NextIntlClientProvider locale={params.locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
