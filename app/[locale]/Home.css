@@ -17,11 +17,11 @@
   }
 
   .home .wrapper .content {
-    @apply flex-1 flex flex-col gap-7 h-full justify-end
+    @apply flex-1 flex flex-col gap-7 h-full
   }
 
   .home .wrapper .content .tagline {
-    @apply grow flex-none md:h-[280px] lg:flex-1 flex flex-col items-end justify-center md:px-24;
+    @apply flex-none md:h-[280px] lg:flex-1 flex flex-col items-end justify-center md:px-24;
     @apply text-xl md:text-3xl leading-4 md:leading-6 text-dark-gray font-semibold
   }
 
