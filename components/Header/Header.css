@@ -15,7 +15,7 @@
   }
 
   header .home__link .logo {
-    @apply md:block w-16 h-16 relative
+    @apply md:block w-16 md:w-24 h-16 md:h-24 relative
   }
 
   header .home__link .divider {
@@ -23,11 +23,11 @@
   }
 
   header .home__link h1 {
-    @apply text-xs md:block md:text-base
+    @apply ml-1 md:ml-4 text-xs md:block md:text-base
   }
 
   header .information {
-    @apply flex flex-col items-end gap-3 justify-between;
+    @apply flex flex-col items-end gap-1 md:gap-3 justify-between;
     @apply md:h-24
   }
 
