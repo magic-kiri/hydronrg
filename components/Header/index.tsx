@@ -1,12 +1,12 @@
-import "./Header.css";
+import './Header.css';
 
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import Link from "next-intl/link";
-import Image from "next/image";
-import SocialLink from "../SocialLink";
-import LanguageLink from "../LanguageLink";
-import PhoneLink from "../PhoneLink";
+import Link from 'next-intl/link';
+import Image from 'next/image';
+import SocialLink from '../SocialLink';
+import LanguageLink from '../LanguageLink';
+import PhoneLink from '../PhoneLink';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +17,9 @@ export default function Header() {
 
   return (
     <header>
-      <Link className="home__link" href={"/"}>
+      <Link className="home__link" href={'/'}>
         <div className="logo">
-          <Image src={"/hydro logo title.svg"} alt={""} fill />
+          <Image src={'/hydro logo title.svg'} alt={''} fill />
         </div>
 
         <span className="divider"></span>
@@ -38,17 +38,17 @@ export default function Header() {
           <p>Сделано в Казахстане</p>
 
           <div className="flag">
-            <Image src={"/flag.png"} alt={""} fill />
+            <Image src={'/flag.png'} alt={''} fill />
           </div>
         </div>
 
         <div className="burger" onClick={toggleMenu}>
-          <Image src={"/icons/menu.svg"} alt={""} fill />
+          <Image src={'/icons/menu.svg'} alt={''} fill />
         </div>
 
-        <div className={`navigation ${isOpen ? "opend" : ""}`}>
+        <div className={`navigation ${isOpen ? 'opend' : ''}`}>
           <div className="close" onClick={toggleMenu}>
-            <Image src={"/icons/close.svg"} alt={""} fill />
+            <Image src={'/icons/close.svg'} alt={''} fill />
           </div>
 
           <nav>
@@ -56,35 +56,30 @@ export default function Header() {
               icon="/icons/phone.svg"
               phones={[
                 {
-                  phone: "+7 777 223 1234",
-                  name: "По вопросам производства и НИОКР",
+                  phone: '+7 777 223 1234',
+                  name: 'По вопросам производства и НИОКР',
                 },
                 {
-                  phone: "+7 776 001 6010",
-                  name: "По коммерческим вопросам",
+                  phone: '+7 776 001 6010',
+                  name: 'По коммерческим вопросам',
                 },
               ]}
             />
-            <SocialLink
-              icon="/icons/location.svg"
-              href="https://2gis.kz/almaty/firm/70000001018400963"
-            />
-            <SocialLink
-              icon="/icons/whatsapp.svg"
-              href="https://wa.me/77772231234 "
-            />
-            <SocialLink
-              icon="/icons/instagram.svg"
-              href="https://www.instagram.com/hydronrg.kz/"
-            />
+            <SocialLink icon="/icons/location.svg" href="https://2gis.kz/almaty/firm/70000001018400963" />
+            <SocialLink icon="/icons/whatsapp.svg" href="https://wa.me/77772231234 " />
+            <SocialLink icon="/icons/instagram.svg" href="https://www.instagram.com/hydronrg.kz/" />
           </nav>
-
-          <nav>
+          <nav className="language">
             <LanguageLink locale="ru" />
             <LanguageLink locale="en" />
             <LanguageLink locale="kk" lang="kz" />
           </nav>
         </div>
+        <nav className="flex md:hidden">
+          <LanguageLink locale="ru" />
+          <LanguageLink locale="en" />
+          <LanguageLink locale="kk" lang="kz" />
+        </nav>
       </div>
     </header>
   );

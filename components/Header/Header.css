@@ -55,6 +55,9 @@
   header .information .navigation.opend {
     @apply flex flex-col justify-center fixed w-full h-screen left-0 top-0 z-50 bg-white
   }
+  header .information .navigation.opend .language{
+    @apply hidden
+  }
 
   header .information .navigation .close {
     @apply absolute top-4 right-4 w-7 h-7 cursor-pointer md:hidden
