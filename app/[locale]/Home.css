@@ -21,7 +21,7 @@
   }
 
   .home .wrapper .content .tagline {
-    @apply flex-none md:h-[280px] lg:flex-1 flex flex-col items-end justify-center md:px-24;
+    @apply my-6 flex-none md:h-[280px] lg:flex-1 flex flex-col items-end justify-center md:px-24;
     @apply text-xl md:text-3xl leading-4 md:leading-6 text-dark-gray font-semibold
   }
 
