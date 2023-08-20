@@ -1,19 +1,11 @@
 'use client';
 
 import './Factory.css';
-
-import { useRouter } from 'next-intl/client';
-import { useTranslations } from 'next-intl';
-import Link from 'next-intl/link';
 import Image from 'next/image';
 
-import { useIsomorphicLayoutEffect } from '@/helper/useIsomorphicLayoutEffect';
 import Header from '@/components/Header';
-import SupportCard from '@/components/SupportCard';
 
 export default function Factory() {
-  // const translate = useTranslations('Home');
-
   return (
     <>
       <Header />

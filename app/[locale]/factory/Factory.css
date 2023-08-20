@@ -5,7 +5,7 @@
 @layer utilities {
    
       .body {
-         @apply flex flex-col md:flex-row md:w-full sm:flex-col
+         @apply h-full flex flex-col md:flex-row md:w-full sm:flex-col
       }
     .left {
         @apply flex flex-col md:w-full flex-1;
@@ -16,7 +16,7 @@
       }
 
      .card {
-        @apply h-1/4 flex-col sm:flex-row flex items-center justify-center p-10;
+        @apply h-fit md:h-1/4 flex-col sm:flex-row flex items-center justify-center p-10;
      } 
 
      .middle {
