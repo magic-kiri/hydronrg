@@ -12,7 +12,7 @@
       }
 
     .right {
-        @apply flex flex-col flex-1 bg-gradient-radial bg-light-gray p-10 relative md:w-full ; 
+        @apply flex flex-col flex-1 bg-gradient-radial bg-light-gray px-10 pt-10 pb-8 relative md:w-full md:h-fit md:min-h-full ; 
       }
 
      .card {
@@ -39,7 +39,7 @@
       }
 
       .bottomright {
-        @apply flex items-end justify-end float-right
+        @apply flex items-center justify-end float-right
       }
       p{
          @apply sm:text-sm md:text-base text-xs;
